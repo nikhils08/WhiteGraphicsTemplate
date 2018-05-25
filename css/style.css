@@ -1,0 +1,349 @@
+/**********************************************************************
+
+    PROJECT NAME            :     White Graphics
+    FONT USED                  :     Roboto Condensed
+                                                    (300, 400, 400+i, 700, 700+i)
+    Greenish Blue                 :   #34C6D3 (Buttons, Icons, Links, Lines & Bg)
+    Steel Gray                      :     #41464B (Headings)
+    Blue Bayoux                    :   #64707B (Paragraphs)
+    White                             :     #FFF (Text with darker BG)
+    Black                              :     #000 (Text with lighter BG)
+
+***********************************************************************/
+
+/***********************************************************************
+                                        GENERAL SECTION
+***********************************************************************/
+
+html, body{
+    font-family: 'Roboto condensed', 'sans-serif';
+    height: 100%;
+}
+
+h3{
+    color: #41464B;
+    text-transform: uppercase;
+}
+
+p{
+    color: #64707B;
+    font-size: 16px;
+    font-weight: 300;
+}
+/***********************************************************************
+                                            HOME SECTION
+***********************************************************************/
+#home{
+    height: 100%;
+}
+
+#home-cover{
+    background-image: url(../images/bg-home.jpg);   
+    height: 100%;
+}
+
+#home-content-box{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-box-inner{
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
+#home-heading h3{
+    color: #fff;
+    font-size: 55px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/***********************************************************************
+                                            BUTTON GENERIC
+***********************************************************************/
+
+.btn-general{
+    border: solid 2px white;
+    border-radius: 0;
+    padding: 12px 26px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-white{
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-white:hover, .btn-white:focus{
+    background: #fff;
+    color: #41464B;
+}
+
+.btn-blue{
+    border-color: #34C6D3;
+    color: #34C6D3;
+}
+
+.btn-blue:hover, .btn-blue:focus{
+    background: #34C6D3;
+    color: #FFF;
+}
+
+/***********************************************************************
+                                            PARALLAX SETTINGS
+***********************************************************************/
+
+.bg-parallax{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/***********************************************************************
+                                            ANIMATION SETTINGS
+***********************************************************************/
+
+#home-cover,
+#home-heading,
+#home-btn{
+    animation-duration: 0.5s;
+}
+
+#home-cover{
+    animation-delay: 0.1s;
+}
+
+#home-heading{
+    animation-delay: 0.5s;
+}
+
+#home-btn{
+    animation-delay: 1s;
+}
+
+/***********************************************************************
+                                            CONTENT BOX(GENERICS)
+***********************************************************************/
+
+.content-box{
+     padding: 60px 0;   
+}
+
+.content-title h3{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content-title-underline{
+    width: 30px;
+    height: 3px;
+    background: #34C6D3;
+    margin: 0 auto 30px;
+}
+
+
+/***********************************************************************************
+                                                        SERVICES SECTION
+***********************************************************************************/
+
+.service-item{
+    padding: 20px 0;
+    margin: 0 0 20px;
+    cursor: pointer;
+}
+
+.service-item-icon i{
+    color: #34C6D3;
+    float: left;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    padding: 15px;
+    margin-right: 25px;
+}
+
+.service-item-title h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+
+.service-item:hover .service-item-icon i{
+    color: #fff;
+    background: #34C6D3;
+}
+
+.service-item-desc p{
+    margin: 0;
+}
+
+/***********************************************************************************
+                                                        ABOUT SECTION
+***********************************************************************************/
+
+#about-content-box{
+    float: left;
+    height: 700px;
+}
+
+#about-content-box-outer{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+#about-content-box-inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#about .content-title h3{
+    text-align: left;
+}
+
+#about .content-title-underline{
+    margin: 0 0 30px; 
+}
+
+#about p{
+    margin-bottom: 30px;
+}
+
+#about-bg-diagonal{
+    width: 60%;
+    height: 700px;
+    float: right;
+    background-image: url('../images/bg-about.jpg');
+    border-top: solid 700px transparent;
+    border-left: solid 150px #fff;
+}
+
+
+/***********************************************************************************
+                                                        WORK SECTION
+***********************************************************************************/
+
+.row.no-padding [class*="col-"]{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-wrapper img:hover{
+    transform: scale(1.3);
+    cursor: zoom-in;
+}
+
+.img-wrapper{
+    overflow: hidden;
+}
+
+.img-wrapper img{
+    transition: transform .5s ease;
+}
+
+/***********************************************************************************
+                                                        OUR TEAM SECTION
+***********************************************************************************/
+
+.team-member {
+    margin: 0 15px;
+}
+
+.team-member-info{
+    padding: 10px 0 30px 0;
+}
+
+h4.team-member-name{
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 2px;
+}
+
+h4.team-member-designation{
+    color: #34C6D3;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+/***********************************************************************************
+                                                        FEEDBACK SECTION
+***********************************************************************************/
+#feedback{
+    background: url('../images/bg-testimonials.jpg');
+}
+
+#feedback .content-box h3, h4{
+    color: #fff;
+}
+
+#client-container .client-member img{
+    width: 200px;
+    margin: 50px auto 0;
+}
+
+#client-container .client-feedback-container{
+    width: 850px;
+    text-align: left;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0 auto;
+}
+
+#client-container .client-details{
+    margin-top: 40px;
+    text-align: center;
+    font-style: normal;
+}
+
+#client-container .client-details .client-name{
+    font-weight: 700;
+}
+
+#client-container .client-details .client-designation{
+    font-weight: 100;
+}
+
+/***********************************************************************************
+                                                        SOCIAL ICONS
+***********************************************************************************/
+
+.social-list{
+    padding-left: 0;
+}
+
+.social-list li{
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+.social-icon i{
+    font-size: 17px;
+}
+
+.icon-gray i{
+    color: #64707B;
+}
+
+.icon-white i{
+    color: #fff;
+}
+
+.social-icon i:hover{
+    color: #34C6D3;
+}
